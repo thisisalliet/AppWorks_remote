@@ -6,13 +6,11 @@ Function
     greet(person: "Luke")
 ##### It will return the string: “Hello, Luke”.
 ```swift
-var person = "Luke"
-
-func greet() {
- print("Hello, \(person).")
+func greet(person: String) -> String {
+  return ("Hello, \(person).")
 }
-
-greet()
+ 
+print(greet(person: "Luke"))
 ```
 -------
 
@@ -29,8 +27,8 @@ print (multiply(a: 5))
 
 ##### 3. What’s the difference between argument label and parameter name in function?
 ```
-Parameters are optional input values that exist between the () in a function definition. 
-For each defined parameter, a real value must be passed in as an argument during the function call.
+The argument label is located before the argument and is used when calling the function.
+The parameter name is used in the implementation of the function and is usually considered as the argument label of the parameter.
 ```
 -------
 
