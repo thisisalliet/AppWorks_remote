@@ -27,8 +27,7 @@ let average: Int = (x + y) / 2
 
 * Please solve this problem so that we can put the average in the record system.
 ```swift 
-  let average: Int = (x + y) / 2
-  var avgString = String(average)
+  let average: Double = (x + y) / 2
 ```
 
 * Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ).
@@ -98,7 +97,12 @@ let remainder = a % b
 > 
 > phoneNumber = "Hello world."
 
-    As phoneNumber is a string of numbers, it should add double question mark to declare and if phoneNumber already been declared previously as a string of numbers, it shouldn’t be declared as another string for “Hello world.”
+```swift
+var phoneNumber: String = "0987654321"
+//phoneNumber is a string rather than a value.
+
+var helloMessage: String = "Hello World"
+//Need to create a new variable as phoneNumber already been declared above.
 
 
 
