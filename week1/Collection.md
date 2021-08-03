@@ -10,7 +10,7 @@ var myFriends = [String]()
 
 ##### 2. According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array.
 ```swift
-var myFriends = [“Ian”, “Bomi”, “Kevin”]
+myFriends += ["Ian", "Bomi", "Kevin"]
 ```
 -------
 
@@ -36,22 +36,21 @@ for person in myFriends {
 -------
 
 ##### 6. Now I want to know who is at index 5 in the myFriends array, try to find the answer for me. Please explain how you get the answer and why the answer is it.
-```swift
-print (myFriends[4])
+``` swift
+print(myFriends.count)
+//No one is at index 5 as there're only four items in the array.
 ```
 -------
 
 ##### 7. How to get the first element in an array?
 ```swift
-print (myFriends[0])
-// Swift arrays are zero-indexed, so to get the first element, the index should be 0.
+print(myFriends[0])
 ```
 -------
 
 ##### 8. How to get the last element in an array?
 ```swift
-print (myFriends[5])
-// The array contains six items in total, so to get the last element, the index should be 5.
+print (myFriends[3])
 ```
 -------
 
@@ -66,11 +65,9 @@ var myCountryNumber = [
 
 ##### 10. Please add three keys ‘US’, ‘GB’, ‘JP’ with values 1, 44 , 81.
 ```swift
-var myCountryNumber = [
-  “US”: 1,
-  “GB”: 44,
-  “JP”: 81
-]
+myCountryNumber["US"] = 1
+myCountryNumber["GB"] = 44
+myCountryNumber["JP"] = 81
 ```
 -------
 
